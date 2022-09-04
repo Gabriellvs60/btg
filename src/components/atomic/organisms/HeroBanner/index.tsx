@@ -5,19 +5,12 @@ import { Typography } from "@mui/material";
 type HeroBannerProps = {
   title?: string;
   description?: string;
-  imageUrl: string;
-  imageMobile: string;
 };
 
-const HeroBanner: FC<HeroBannerProps> = ({
-  title,
-  description,
-  imageUrl,
-  imageMobile,
-}) => {
+const HeroBanner: FC<HeroBannerProps> = ({ title, description }) => {
   return (
     <HeroWrapper>
-      <HeroUnit $imageUrl={imageUrl} $imageMobile={imageMobile}>
+      <HeroUnit>
         <HeroContent>
           <Typography
             component="h1"

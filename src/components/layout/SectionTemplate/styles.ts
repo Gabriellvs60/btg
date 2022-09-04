@@ -6,10 +6,13 @@ export const SectionWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media (max-width: 600px) {
+  @media (max-width: 1200px) {
     padding: ${({ theme }) => theme.spacing(3)};
   }
   @media (min-width: 1200px ) {
+    padding: ${({ theme }) => theme.spacing(3, 20, 10, 20)};
+  }
+  @media (min-width: 1400px ) {
     padding: ${({ theme }) => theme.spacing(3, 30, 10, 30)};
   }
 `;

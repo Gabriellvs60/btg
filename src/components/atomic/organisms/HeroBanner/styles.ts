@@ -1,8 +1,6 @@
 import styled from "@emotion/styled";
 
 export const HeroWrapper = styled.div`
-  width: 100vw;
-
   position: relative;
   @media (max-width: 600px) {
     height: 500px;
@@ -61,6 +59,5 @@ export const HeroContent = styled.div`
     padding: ${({ theme }) => theme.spacing(4)};
     width: 30%;
   }
-
   height: 100%;
 `;

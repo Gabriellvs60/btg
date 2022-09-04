@@ -5,6 +5,7 @@ import LayoutTemplate from "@/components/layout/LayoutTemplate";
 import WealthManagementSection from "@/components/atomic/organisms/WealthManagementSection";
 import NewsSection from "@/components/atomic/organisms/NewsSection";
 import HeroBanner from "@/components/atomic/organisms/HeroBanner";
+
 const Home: NextPage = () => {
   return (
     <>
@@ -14,8 +15,6 @@ const Home: NextPage = () => {
       </Head>
       <LayoutTemplate>
         <HeroBanner
-          imageMobile="/wm-banner_mobile.png"
-          imageUrl="/wm-banner.png"
           title="Btg Pactual Wealth Management."
           description="uma das equipes mais premiadas em gestão patrimonial e acesso a
             produtos globais para atingir seus objetivos"

@@ -1,7 +1,13 @@
-import { StyledCard, HeaderWrapper, DescriptionWrapper } from './styles';
-import React, { FC } from 'react';
-import { CardActions, CardContent, CardMedia, Typography } from '@mui/material';
-import { colors } from '@/styles/colors';
+import {
+  StyledCard,
+  HeaderWrapper,
+  DescriptionWrapper,
+  TitleWrapper,
+  StyledCardcontent,
+} from "./styles";
+import React, { FC } from "react";
+import { CardActions, CardMedia, Typography } from "@mui/material";
+import { colors } from "@/styles/colors";
 
 type NewsCardProps = {
   title: string;
@@ -26,17 +32,19 @@ const NewsCard: FC<NewsCardProps> = ({
           alt="green iguana"
         />
       </HeaderWrapper>
-      <CardContent>
-        <Typography mb={2} variant="h3" color="text.secondary">
-          {title}
-        </Typography>
+      <StyledCardcontent>
+        <TitleWrapper>
+          <Typography mb={2} variant="h3" color="text.secondary">
+            {title}
+          </Typography>
+        </TitleWrapper>
         <DescriptionWrapper>
           <Typography variant="body2" color={colors.edelweissGray.dark}>
             {description}
           </Typography>
         </DescriptionWrapper>
-      </CardContent>
-      {actionComponent && <CardActions>{actionComponent}</CardActions>}
+    <CardActions>{actionComponent}</CardActions>
+      </StyledCardcontent>
     </StyledCard>
   );
 };
